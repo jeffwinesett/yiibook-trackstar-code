@@ -1,0 +1,827 @@
+2012/04/11 22:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/hello".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('message/hello')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=message/hello
+---
+2012/04/11 22:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('index')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=index
+---
+2012/04/26 22:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=gii
+---
+2012/04/26 22:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('gii.')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=gii.
+---
+2012/04/26 22:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('gii.')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=gii.
+---
+2012/04/26 22:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('gii.')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=gii.
+---
+2012/04/28 21:43:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Webroot/YiiRoot/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Webroot/YiiRoot/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/admin')
+#9 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Webroot/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/view&id=1
+---
+2012/05/14 22:35:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:215
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/create')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/index
+---
+2012/05/15 23:39:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:222
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('admin')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/admin')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/index&pid=1
+---
+2012/05/15 23:42:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:222
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('admin')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/admin')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/index&pid=1
+---
+2012/05/15 23:43:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:222
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('index')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/admin&pid=1
+---
+2012/05/15 23:43:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:222
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('index')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/admin&pid=1
+---
+2012/05/15 23:45:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:222
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('index')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/admin&pid=1
+---
+2012/05/27 17:16:09 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:08:18 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:08:35 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:11:30 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:11:39 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:11:45 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:11:53 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/27 18:12:24 [warning] [application] Failed to set unsafe attribute "password_repeat" of "User".
+in /Webroot/trackstar/protected/controllers/UserController.php (71)
+in /Webroot/trackstar/index.php (13)
+2012/05/28 17:49:50 [error] [php] Undefined variable: user (/Webroot/trackstar/protected/models/LoginForm.php:72)
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /Webroot/YiiRoot/framework/web/CController.php(287): SiteController->runAction()
+#2 /Webroot/YiiRoot/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#3 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): SiteController->run()
+#4 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Webroot/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=site/login
+in /Webroot/trackstar/protected/models/LoginForm.php (72)
+in /Webroot/trackstar/protected/controllers/SiteController.php (88)
+in /Webroot/trackstar/index.php (13)
+2012/05/28 17:56:37 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.lastLogin" is not defined.' in /Webroot/YiiRoot/framework/base/CComponent.php:131
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/auth/CWebUser.php(141): CComponent->__get('lastLogin')
+#1 /Webroot/trackstar/protected/components/UserIdentity.php(28): CWebUser->__get('lastLogin')
+#2 /Webroot/trackstar/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#3 /Webroot/YiiRoot/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 /Webroot/YiiRoot/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 /Webroot/YiiRoot/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 /Webroot/trackstar/protected/controllers/SiteController.php(88): CModel->validate()
+#7 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#8 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Webroot/YiiRoot/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('login')
+#12 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#13 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Webroot/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=site/login
+HTTP_REFERER=http://localhost/trackstar/index.php?r=site/login
+---
+2012/05/29 19:58:37 [error] [php] A non well formed numeric value encountered (/Webroot/trackstar/protected/views/site/index.php:7)
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /Webroot/YiiRoot/framework/web/CController.php(870): SiteController->renderFile()
+#2 /Webroot/YiiRoot/framework/web/CController.php(783): SiteController->renderPartial()
+#3 /Webroot/trackstar/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Webroot/YiiRoot/framework/web/CController.php(287): SiteController->runAction()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): SiteController->run()
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php
+in /Webroot/trackstar/protected/views/site/index.php (7)
+in /Webroot/trackstar/protected/controllers/SiteController.php (32)
+in /Webroot/trackstar/index.php (13)
+2012/06/18 00:02:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Webroot/YiiRoot/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Webroot/YiiRoot/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/admin')
+#9 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Webroot/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/create&pid=1
+---
+2012/06/20 23:08:41 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "createUsernameList".' in /Webroot/YiiRoot/framework/base/CComponent.php:266
+Stack trace:
+#0 /Webroot/trackstar/protected/views/project/adduser.php(30): CComponent->__call('createUsernameL...', Array)
+#1 /Webroot/trackstar/protected/views/project/adduser.php(30): CActiveForm->createUsernameList()
+#2 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#3 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#4 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#5 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('adduser', Array, true)
+#6 /Webroot/trackstar/protected/controllers/ProjectController.php(160): CController->render('adduser', Array)
+#7 [internal function]: ProjectController->actionAdduser('1')
+#8 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#9 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#10 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#17 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#19 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#20 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Webroot/trackstar/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=1
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/view&id=1
+---
+2012/06/20 23:10:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usename' in 'field list'. The SQL statement executed was: SELECT usename FROM tbl_user.
+in /Webroot/trackstar/protected/models/ProjectUserForm.php (74)
+in /Webroot/trackstar/protected/views/project/adduser.php (30)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (160)
+2012/06/20 23:10:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usename' in 'field list'. The SQL statement executed was: SELECT usename FROM tbl_user' in /Webroot/YiiRoot/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Webroot/trackstar/protected/models/ProjectUserForm.php(74): CDbCommand->queryAll()
+#2 /Webroot/trackstar/protected/views/project/adduser.php(30): ProjectUserForm->createUsernameList()
+#3 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#4 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#5 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#6 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('adduser', Array, true)
+#7 /Webroot/trackstar/protected/controllers/ProjectController.php(160): CController->render('adduser', Array)
+#8 [internal function]: ProjectController->actionAdduser('1')
+#9 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#10 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#11 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#18 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#20 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#21 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /Webroot/trackstar/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=1
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/view&id=1
+---
+2012/06/20 23:19:08 [error] [php] Undefined index: usermame (/Webroot/trackstar/protected/models/ProjectUserForm.php:79)
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CBaseController.php(96): ProjectController->renderInternal()
+#1 /Webroot/YiiRoot/framework/web/CController.php(870): ProjectController->renderFile()
+#2 /Webroot/YiiRoot/framework/web/CController.php(783): ProjectController->renderPartial()
+#3 /Webroot/trackstar/protected/controllers/ProjectController.php(160): ProjectController->render()
+#4 unknown(0): ProjectController->actionAdduser()
+#5 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#6 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#9 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /Webroot/YiiRoot/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#12 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#14 /Webroot/YiiRoot/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#15 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): ProjectController->run()
+#16 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Webroot/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=1
+in /Webroot/trackstar/protected/models/ProjectUserForm.php (79)
+in /Webroot/trackstar/protected/views/project/adduser.php (13)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (160)
+2012/06/20 23:25:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pro' in 'where clause'. The SQL statement executed was: SELECT user_id FROM tbl_project_user_assignment WHERE pro-ject_id=:projectId AND user_id=:userId.
+in /Webroot/trackstar/protected/models/Project.php (171)
+in /Webroot/trackstar/protected/models/ProjectUserForm.php (51)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (151)
+2012/06/20 23:25:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pro' in 'where clause'. The SQL statement executed was: SELECT user_id FROM tbl_project_user_assignment WHERE pro-ject_id=:projectId AND user_id=:userId' in /Webroot/YiiRoot/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Webroot/trackstar/protected/models/Project.php(171): CDbCommand->execute()
+#1 /Webroot/trackstar/protected/models/ProjectUserForm.php(51): Project->isUserInProject(Object(User))
+#2 /Webroot/YiiRoot/framework/validators/CInlineValidator.php(43): ProjectUserForm->verify('username', Array)
+#3 /Webroot/YiiRoot/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(ProjectUserForm), 'username')
+#4 /Webroot/YiiRoot/framework/base/CModel.php(158): CValidator->validate(Object(ProjectUserForm), NULL)
+#5 /Webroot/trackstar/protected/controllers/ProjectController.php(151): CModel->validate()
+#6 [internal function]: ProjectController->actionAdduser('1')
+#7 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#8 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#9 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#16 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#18 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#19 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Webroot/trackstar/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=1
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/adduser&id=1
+---
+2012/06/20 23:47:42 [error] [exception.CException] exception 'CException' with message 'Project and its behaviors do not have a method or closure named "isUserInRole".' in /Webroot/YiiRoot/framework/base/CComponent.php:266
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/ar/CActiveRecord.php(226): CComponent->__call('isUserInRole', Array)
+#1 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): CActiveRecord->__call('isUserInRole', Array)
+#2 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): Project->isUserInRole('owner')
+#3 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150): eval()
+#4 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(102): CAuthManager->executeBizRule('return isset($p...', Array, NULL)
+#5 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(112): CDbAuthManager->checkAccessRecursive('owner', '4', Array, Array)
+#6 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('createUser', '4', Array, Array)
+#7 /Webroot/YiiRoot/framework/web/auth/CWebUser.php(794): CDbAuthManager->checkAccess('createUser', '4', Array)
+#8 /Webroot/trackstar/protected/views/project/view.php(17): CWebUser->checkAccess('createUser', Array)
+#9 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#10 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#11 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#12 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#13 /Webroot/trackstar/protected/controllers/ProjectController.php(40): CController->render('view', Array)
+#14 [internal function]: ProjectController->actionView('1')
+#15 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#16 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#17 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#24 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('view')
+#26 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/view')
+#27 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Webroot/trackstar/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+---
+2012/06/20 23:49:37 [error] [exception.CException] exception 'CException' with message 'Project and its behaviors do not have a method or closure named "isUserInRole".' in /Webroot/YiiRoot/framework/base/CComponent.php:266
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/ar/CActiveRecord.php(226): CComponent->__call('isUserInRole', Array)
+#1 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): CActiveRecord->__call('isUserInRole', Array)
+#2 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): Project->isUserInRole('owner')
+#3 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150): eval()
+#4 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(102): CAuthManager->executeBizRule('return isset($p...', Array, NULL)
+#5 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(112): CDbAuthManager->checkAccessRecursive('owner', '4', Array, Array)
+#6 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('createUser', '4', Array, Array)
+#7 /Webroot/YiiRoot/framework/web/auth/CWebUser.php(794): CDbAuthManager->checkAccess('createUser', '4', Array)
+#8 /Webroot/trackstar/protected/views/project/view.php(17): CWebUser->checkAccess('createUser', Array)
+#9 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#10 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#11 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#12 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#13 /Webroot/trackstar/protected/controllers/ProjectController.php(40): CController->render('view', Array)
+#14 [internal function]: ProjectController->actionView('1')
+#15 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#16 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#17 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#24 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('view')
+#26 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/view')
+#27 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Webroot/trackstar/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+---
+2012/06/20 23:49:44 [error] [exception.CException] exception 'CException' with message 'Project and its behaviors do not have a method or closure named "isUserInRole".' in /Webroot/YiiRoot/framework/base/CComponent.php:266
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/ar/CActiveRecord.php(226): CComponent->__call('isUserInRole', Array)
+#1 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): CActiveRecord->__call('isUserInRole', Array)
+#2 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): Project->isUserInRole('owner')
+#3 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150): eval()
+#4 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(102): CAuthManager->executeBizRule('return isset($p...', Array, NULL)
+#5 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(112): CDbAuthManager->checkAccessRecursive('owner', '4', Array, Array)
+#6 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('createUser', '4', Array, Array)
+#7 /Webroot/YiiRoot/framework/web/auth/CWebUser.php(794): CDbAuthManager->checkAccess('createUser', '4', Array)
+#8 /Webroot/trackstar/protected/views/project/view.php(17): CWebUser->checkAccess('createUser', Array)
+#9 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#10 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#11 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#12 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#13 /Webroot/trackstar/protected/controllers/ProjectController.php(40): CController->render('view', Array)
+#14 [internal function]: ProjectController->actionView('1')
+#15 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#16 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#17 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#20 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#24 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('view')
+#26 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/view')
+#27 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#28 /Webroot/trackstar/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+---
+2012/06/20 23:52:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_project_user_role' doesn't exist. The SQL statement executed was: SELECT * FROM tbl_project_user_role WHERE project_id=:projectId AND user_id=:userId AND role=:role.
+in /Webroot/trackstar/protected/models/Project.php (151)
+in /Webroot/trackstar/protected/views/project/view.php (17)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (40)
+2012/06/20 23:52:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_project_user_role' doesn't exist. The SQL statement executed was: SELECT * FROM tbl_project_user_role WHERE project_id=:projectId AND user_id=:userId AND role=:role' in /Webroot/YiiRoot/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Webroot/trackstar/protected/models/Project.php(151): CDbCommand->execute()
+#1 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150) : eval()'d code(1): Project->allowCurrentUser('owner')
+#2 /Webroot/YiiRoot/framework/web/auth/CAuthManager.php(150): eval()
+#3 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(102): CAuthManager->executeBizRule('return isset($p...', Array, NULL)
+#4 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(112): CDbAuthManager->checkAccessRecursive('owner', '4', Array, Array)
+#5 /Webroot/YiiRoot/framework/web/auth/CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('createUser', '4', Array, Array)
+#6 /Webroot/YiiRoot/framework/web/auth/CWebUser.php(794): CDbAuthManager->checkAccess('createUser', '4', Array)
+#7 /Webroot/trackstar/protected/views/project/view.php(17): CWebUser->checkAccess('createUser', Array)
+#8 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#9 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#10 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#11 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#12 /Webroot/trackstar/protected/controllers/ProjectController.php(40): CController->render('view', Array)
+#13 [internal function]: ProjectController->actionView('1')
+#14 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#15 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#16 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#23 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('view')
+#25 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/view')
+#26 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Webroot/trackstar/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/trackstar/index.php?r=project/view&id=1
+---
+2012/06/20 23:59:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to per-form this action.' in /Webroot/trackstar/protected/controllers/ProjectController.php:146
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('1')
+#1 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#10 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#12 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#13 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Webroot/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=1
+---
+2012/09/19 21:42:14 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /Webroot/YiiRoot/framework/base/CComponent.php:131
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/auth/CWebUser.php(141): CComponent->__get('username')
+#1 /Webroot/trackstar/protected/controllers/ProjectController.php(63): CWebUser->__get('username')
+#2 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): ProjectController->actionCreate()
+#3 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#10 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/create')
+#13 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Webroot/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/create
+---
+2012/09/19 21:43:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar`.`tbl_project_user_assignment`, CONSTRAINT `fk_project_user_role` FOREIGN KEY (`role`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `tbl_project_user_assignment` (`role`, `user_id`, `project_id`) VALUES (:role, :user_id, :project_id).
+in /Webroot/trackstar/protected/models/Project.php (126)
+in /Webroot/trackstar/protected/models/ProjectUserForm.php (69)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (67)
+2012/09/19 21:43:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar`.`tbl_project_user_assignment`, CONSTRAINT `fk_project_user_role` FOREIGN KEY (`role`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `tbl_project_user_assignment` (`role`, `user_id`, `project_id`) VALUES (:role, :user_id, :project_id)' in /Webroot/YiiRoot/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 /Webroot/trackstar/protected/models/Project.php(126): CDbCommand->insert('tbl_project_use...', Array)
+#2 /Webroot/trackstar/protected/models/ProjectUserForm.php(69): Project->assignUser('1', 'owner')
+#3 /Webroot/trackstar/protected/controllers/ProjectController.php(67): ProjectUserForm->assign()
+#4 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): ProjectController->actionCreate()
+#5 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#12 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('create')
+#14 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/create')
+#15 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Webroot/trackstar/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/trackstar/index.php?r=project/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/create
+---
+2012/09/19 21:44:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar`.`tbl_project_user_assignment`, CONSTRAINT `fk_project_user_role` FOREIGN KEY (`role`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `tbl_project_user_assignment` (`role`, `user_id`, `project_id`) VALUES (:role, :user_id, :project_id).
+in /Webroot/trackstar/protected/models/Project.php (126)
+in /Webroot/trackstar/protected/models/ProjectUserForm.php (69)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (67)
+2012/09/19 21:44:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar`.`tbl_project_user_assignment`, CONSTRAINT `fk_project_user_role` FOREIGN KEY (`role`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `tbl_project_user_assignment` (`role`, `user_id`, `project_id`) VALUES (:role, :user_id, :project_id)' in /Webroot/YiiRoot/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 /Webroot/trackstar/protected/models/Project.php(126): CDbCommand->insert('tbl_project_use...', Array)
+#2 /Webroot/trackstar/protected/models/ProjectUserForm.php(69): Project->assignUser('1', 'owner')
+#3 /Webroot/trackstar/protected/controllers/ProjectController.php(67): ProjectUserForm->assign()
+#4 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): ProjectController->actionCreate()
+#5 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#12 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('create')
+#14 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/create')
+#15 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Webroot/trackstar/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/trackstar/index.php?r=project/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/create
+---
+2012/09/19 21:59:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar`.`tbl_project_user_assignment`, CONSTRAINT `fk_project_user_role` FOREIGN KEY (`role`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `tbl_project_user_assignment` (`role`, `user_id`, `project_id`) VALUES (:role, :user_id, :project_id).
+in /Webroot/trackstar/protected/models/Project.php (126)
+in /Webroot/trackstar/protected/models/ProjectUserForm.php (70)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (68)
+2012/09/19 21:59:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`trackstar`.`tbl_project_user_assignment`, CONSTRAINT `fk_project_user_role` FOREIGN KEY (`role`) REFERENCES `tbl_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `tbl_project_user_assignment` (`role`, `user_id`, `project_id`) VALUES (:role, :user_id, :project_id)' in /Webroot/YiiRoot/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Webroot/YiiRoot/framework/db/CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 /Webroot/trackstar/protected/models/Project.php(126): CDbCommand->insert('tbl_project_use...', Array)
+#2 /Webroot/trackstar/protected/models/ProjectUserForm.php(70): Project->assignUser('1', 'owner')
+#3 /Webroot/trackstar/protected/controllers/ProjectController.php(68): ProjectUserForm->assign()
+#4 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): ProjectController->actionCreate()
+#5 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#12 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('create')
+#14 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/create')
+#15 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Webroot/trackstar/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/trackstar/index.php?r=project/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=project/create
+---
+2012/09/19 22:10:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Webroot/trackstar/protected/controllers/ProjectController.php:159
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('13')
+#1 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#10 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#12 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#13 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Webroot/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=13
+---
+2012/09/19 22:10:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Webroot/YiiRoot/framework/web/CController.php:337
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser
+---
+2012/09/19 22:11:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Webroot/trackstar/protected/controllers/ProjectController.php:159
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('13')
+#1 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#10 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('adduser')
+#12 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('project/adduser')
+#13 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Webroot/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=13
+---
+2012/09/21 21:57:55 [error] [exception.CException] exception 'CException' with message 'IssueController cannot find the requested view "_comments".' in /Webroot/YiiRoot/framework/web/CController.php:879
+Stack trace:
+#0 /Webroot/trackstar/protected/views/issue/view.php(53): CController->renderPartial('_comments', Array)
+#1 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/tracks...')
+#2 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/tracks...', Array, true)
+#3 /Webroot/YiiRoot/framework/web/CController.php(870): CBaseController->renderFile('/Webroot/tracks...', Array, true)
+#4 /Webroot/YiiRoot/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#5 /Webroot/trackstar/protected/controllers/IssueController.php(39): CController->render('view', Array)
+#6 [internal function]: IssueController->actionView('1')
+#7 /Webroot/YiiRoot/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(IssueController), Array)
+#8 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(IssueController), Object(ReflectionMethod), Array)
+#9 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#16 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('view')
+#18 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/view')
+#19 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Webroot/trackstar/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/view&id=1
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/view&id=1
+---
+2012/09/22 10:43:57 [error] [php] include(RecentComments.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Webroot/YiiRoot/framework/YiiBase.php:418)
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWidgetFactory.php(147): import()
+#1 /Webroot/YiiRoot/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /Webroot/YiiRoot/framework/web/CBaseController.php(173): ProjectController->createWidget()
+#3 /Webroot/trackstar/protected/views/project/index.php(19): ProjectController->widget()
+#4 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require()
+#5 /Webroot/YiiRoot/framework/web/CBaseController.php(96): ProjectController->renderInternal()
+#6 /Webroot/YiiRoot/framework/web/CController.php(870): ProjectController->renderFile()
+#7 /Webroot/YiiRoot/framework/web/CController.php(783): ProjectController->renderPartial()
+#8 /Webroot/trackstar/protected/controllers/ProjectController.php(132): ProjectController->render()
+#9 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): ProjectController->actionIndex()
+#10 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#12 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Webroot/YiiRoot/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#15 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#17 /Webroot/YiiRoot/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#18 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): ProjectController->run()
+#19 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#20 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Webroot/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/index
+in /Webroot/trackstar/protected/views/project/index.php (19)
+in /Webroot/trackstar/protected/controllers/ProjectController.php (132)
+in /Webroot/trackstar/index.php (13)
+2012/09/22 23:37:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:200
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('index')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/view&id=1
+---
+2012/09/22 23:41:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:200
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('index')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/create&pid=1
+---
+2012/09/22 23:42:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /Webroot/trackstar/protected/controllers/IssueController.php:200
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#7 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('index')
+#9 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/index')
+#10 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Webroot/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/create&pid=1
+---
+2012/09/22 23:44:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Webroot/YiiRoot/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Webroot/YiiRoot/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Webroot/YiiRoot/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Webroot/YiiRoot/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Webroot/YiiRoot/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Webroot/YiiRoot/framework/web/CController.php(292): CFilterChain->run()
+#6 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('issue/admin')
+#9 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Webroot/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin&pid=1
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/create&pid=1
+---

@@ -1,0 +1,16 @@
+2012/04/11 22:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/hello".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('message/hello')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=message/hello
+---
+2012/04/11 22:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /Webroot/YiiRoot/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('index')
+#1 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Webroot/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=index
+---
