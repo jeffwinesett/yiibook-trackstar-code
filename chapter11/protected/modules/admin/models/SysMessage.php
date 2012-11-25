@@ -15,7 +15,7 @@
  * @property User $createUser
  * @property User $updateUser
  */
-class SysMessage extends TrackstarActiveRecord
+class SysMessage extends TrackStarActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
