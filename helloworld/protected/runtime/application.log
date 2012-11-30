@@ -1,0 +1,64 @@
+2012/04/01 19:55:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Webroot/YiiRoot/framework/web/CController.php:484
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CController.php(271): CController->missingAction('')
+#1 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('message')
+#3 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Webroot/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helloworld/index.php?r=message
+HTTP_REFERER=http://localhost/helloworld/index.php?r=gii/controller
+---
+2012/04/01 20:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Webroot/YiiRoot/framework/web/CController.php:484
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CController.php(271): CController->missingAction('')
+#1 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('message')
+#3 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Webroot/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helloworld/index.php?r=message
+HTTP_REFERER=http://localhost/helloworld/index.php?r=gii/controller
+---
+2012/04/01 20:18:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Webroot/YiiRoot/framework/web/CController.php:484
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CController.php(271): CController->missingAction('')
+#1 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('')
+#2 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('message')
+#3 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Webroot/helloworld/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helloworld/index.php?r=message
+HTTP_REFERER=http://localhost/helloworld/index.php?r=gii/controller
+---
+2012/08/28 17:54:24 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/Webroot/helloworld/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /Webroot/YiiRoot/framework/web/CAssetManager.php:116
+Stack trace:
+#0 /Webroot/YiiRoot/framework/web/CAssetManager.php(101): CAssetManager->setBasePath('/Webroot/hellow...')
+#1 /Webroot/YiiRoot/framework/web/CAssetManager.php(219): CAssetManager->getBasePath()
+#2 /Webroot/YiiRoot/framework/gii/GiiModule.php(139): CAssetManager->publish('/Webroot/YiiRoo...')
+#3 /Webroot/YiiRoot/framework/base/CComponent.php(112): GiiModule->getAssetsUrl()
+#4 /Webroot/YiiRoot/framework/base/CModule.php(106): CComponent->__get('assetsUrl')
+#5 /Webroot/YiiRoot/framework/gii/views/layouts/main.php(5): CModule->__get('assetsUrl')
+#6 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/YiiRoo...')
+#7 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/YiiRoo...', Array, true)
+#8 /Webroot/YiiRoot/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/Webroot/YiiRoo...', Array, true)
+#9 /Webroot/YiiRoot/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#10 /Webroot/YiiRoot/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#11 /Webroot/YiiRoot/framework/web/CBaseController.php(207): COutputProcessor->run()
+#12 /Webroot/YiiRoot/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#13 /Webroot/YiiRoot/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#14 /Webroot/YiiRoot/framework/web/CBaseController.php(127): require('/Webroot/YiiRoo...')
+#15 /Webroot/YiiRoot/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Webroot/YiiRoo...', Array, true)
+#16 /Webroot/YiiRoot/framework/web/CController.php(785): CBaseController->renderFile('/Webroot/YiiRoo...', Array, true)
+#17 /Webroot/YiiRoot/framework/gii/controllers/DefaultController.php(47): CController->render('login', Array)
+#18 /Webroot/YiiRoot/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#19 /Webroot/YiiRoot/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /Webroot/YiiRoot/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#21 /Webroot/YiiRoot/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Webroot/YiiRoot/framework/web/CWebApplication.php(276): CController->run('login')
+#23 /Webroot/YiiRoot/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/default/log...')
+#24 /Webroot/YiiRoot/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /Webroot/helloworld/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/helloworld/index.php?r=gii/default/login
+---
