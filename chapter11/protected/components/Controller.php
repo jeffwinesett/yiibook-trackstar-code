@@ -42,7 +42,7 @@ class Controller extends CController
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'controllers'=>array('issue','project','user'),
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'controllers'=>array('issue','project','user'),
