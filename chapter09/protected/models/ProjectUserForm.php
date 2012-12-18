@@ -70,7 +70,7 @@ class ProjectUserForm extends CFormModel
 			$this->project->assignUser($this->_user->id, $this->role);  
 			//add the association, along with the RBAC biz rule, to our RBAC hierarchy
 	        $auth = Yii::app()->authManager; 
-			if(!$auth->checkAccess($this->role, $this->_user->id))
+			if(!$auth->isAssigned($this->role, $this->_user->id))
 			{
 				$bizRule='return isset($params["project"]) && $params["project"]->allowCurrentUser("'.$this->role.'");';  
 				$auth->assign($this->role,$this->_user->id, $bizRule);
